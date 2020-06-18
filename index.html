@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Piggyvest Interest Calculator</title>
+		<link rel="stylesheet" href="./public/build/tailwind.css" />
+	</head>
+	<body class="font-display">
+		<div class="container w-full mx-auto">
+			<nav
+				class="flex items-center justify-between bg-transparent flex-wrap p-6"
+			>
+				<div
+					class="flex items-center flex-shrink-0 text-white mr-6 lg:flex-grow"
+				>
+					<a href="index.html"
+						><img src="./images/piggy-logo.svg" alt="logo"
+					/></a>
+				</div>
+				<div class="block lg:hidden">
+					<button
+						class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+					>
+						<svg
+							class="fill-current h-3 w-3"
+							viewBox="0 0 20 20"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<title>Menu</title>
+							<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+						</svg>
+					</button>
+				</div>
+				<div
+					class="w-full block flex-grow lg:flex lg:items-center lg:justify-end lg:w-auto"
+				>
+					<div class="text-sm">
+						<a
+							href="#responsive-header"
+							class="block mt-4 lg:inline-block lg:mt-0 text-primary-blue hover:text-white mr-6"
+						>
+							About
+						</a>
+						<a
+							href="#responsive-header"
+							class="block mt-4 lg:inline-block lg:mt-0 text-primary-blue hover:text-white mr-6"
+						>
+							Stories
+						</a>
+						<a
+							href="#responsive-header"
+							class="block mt-4 lg:inline-block lg:mt-0 text-primary-blue hover:text-white mr-6"
+						>
+							FAQ
+						</a>
+						<a
+							href="#responsive-header"
+							class="block mt-4 lg:inline-block lg:mt-0 text-primary-blue hover:text-white mr-6"
+						>
+							Blog
+						</a>
+						<a
+							href="#responsive-header"
+							class="block mt-4 lg:inline-block lg:mt-0 text-primary-blue hover:text-white mr-10"
+						>
+							Log In
+						</a>
+					</div>
+					<div>
+						<a
+							href="#"
+							class="inline-block text-sm px-4 py-2 leading-none border rounded text-primary-blue border-primary-blue hover:border-transparent hover:text-white hover:bg-primary-blue mt-4 lg:mt-0"
+							>Create a Free Account</a
+						>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<div class="container w-full mx-auto p-6 mt-16">
+			<div class="hero flex flex-wrap items-center justify-between">
+				<div
+					class="hero-img lg:w-1/2 w-full sm:w-full sm:flex sm:justify-center flex flex-col"
+				>
+					<h1
+						class="text-primary-blue font-bold text-4xl leading-tight text-center md:text-left"
+					>
+						Estimate your investment<br />
+						growth over time
+					</h1>
+					<img src="./images/hero.svg" alt="Estimate your investement growth" />
+				</div>
+				<div
+					class="hero-form lg:w-1/2 w-full sm:w-full sm:flex sm:flex-col sm:items-center sm:mt-8"
+				>
+					<form class="w-full max-w-lg">
+						<div class="flex flex-wrap -mx-3 mb-6">
+							<div class="w-full px-3">
+								<label
+									class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+									for="grid-amount"
+								>
+									Amount to lock
+								</label>
+								<input
+									class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+									id="grid-amount"
+									type="number"
+									placeholder="25000"
+								/>
+							</div>
+						</div>
+						<div class="flex flex-wrap -mx-3 mb-6">
+							<div class="w-full px-3 mb-6 md:mb-0">
+								<label
+									class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+									for="grid-duration"
+								>
+									Duration
+								</label>
+								<div class="relative mb-3">
+									<select
+										class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+										id="grid-duration"
+									>
+										<option>Monthly</option>
+										<option>Weekly</option>
+										<option>Daily</option>
+									</select>
+									<div
+										class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+									>
+										<svg
+											class="fill-current h-4 w-4"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 20 20"
+										>
+											<path
+												d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+											/>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flex flex-wrap -mx-3 mb-2">
+							<div class="w-full px-3 mb-6 md:mb-0">
+								<label
+									class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+									for="grid-duration"
+								>
+									Payback Date
+								</label>
+								<input
+									class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+									id="grid-duration"
+									type="date"
+									value="2020-06-17"
+									min="2020-01-01"
+									max="2020-12-31"
+								/>
+							</div>
+						</div>
+					</form>
+					<div class="w-full text-center mt-6">
+						<h3 class="text-primary-blue text-2xl">Estimated Balance</h3>
+						<span class="text-2xl">NG12,000</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container w-full mx-auto p-6 mt-16">
+			<div class="how-it-works flex flex-wrap items-center justify-between">
+				<h2
+					class="w-full text-primary-blue font-bold text-3xl leading-tight text-center"
+				>
+					How does the calculator work
+				</h2>
+				<div
+					class="functionality flex flex-wrap items-center justify-between md:justify-center my-4"
+				>
+					<div class="functionality-img lg:w-1/2 md:w-2/2">
+						<img
+							src="./images/how-it-works.svg"
+							alt="How the calculator works"
+						/>
+					</div>
+					<div
+						class="functionality-info text-center lg:w-1/2 md:w-2/2 lg:pr-24 lg:text-left md:text-center sm:pr-0 md:pr-0"
+					>
+						<p class="mb-5">
+							Use our "SafeLock" feature to lock funds away so you don't have
+							access until your set date. You also earn over 13% p.a.
+						</p>
+						<div>
+							<a
+								href="#"
+								class="inline-block text-sm px-4 py-2 leading-none border rounded text-white bg-green-500 border-green-500 hover:border-green-500 hover:text-green-500 hover:bg-transparent mt-4 lg:mt-0"
+								>Create a Free Account</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container w-full mx-auto p-6 mt-16 text-center">
+			<h2
+				class="text-primary-blue font-bold text-3xl leading-tight text-center mb-12"
+			>
+				Over ₦1,000,000,000 securely saved every month
+			</h2>
+			<p class="mb-8">
+				PiggyVest uses bank-level security measures to keep your data safe.
+				<br />
+				PiggyVest users save & invest well over a billion every single month,
+				and they are just getting started.
+			</p>
+			<div>
+				<a
+					href="#"
+					class="inline-block text-sm px-4 py-2 leading-none border rounded text-white bg-primary-blue border-primary-blue hover:border-primary-blue hover:text-primary-blue hover:bg-transparent mt-4 lg:mt-0"
+					>Create Account For Free</a
+				>
+			</div>
+			<div class="stores flex justify-center mt-6">
+				<img src="./images/app-store.svg" alt="app store" class="mr-2" />
+				<img src="./images/google-play.svg" alt="google play" class="ml-2" />
+			</div>
+		</div>
+
+		<footer class="container mx-auto w-full mt-20">
+			<div
+				class="w-full w-6/6 flex flex-wrap items-center justify-between p-6 md:"
+			>
+				<div class="flex mb-6 mx-auto lg:w-4/6 flex-1">
+					<div class="w-full flex-1">
+						<img src="./images/piggy-logo.svg" alt="logo" class="pb-10" />
+						<div class="pr-24">
+							<p class="pb-4">
+								PiggyVest (formerly piggybank.ng) is the largest online savings
+								& investing platform in Nigeria. <br />
+								For over 4 years, our customers have saved and invested billions
+								of Naira that they would normally be tempted to spend.
+							</p>
+							<p class="pb-4">
+								Office: Tesmot House, 3 Abdulrahman Okene Close, off Ligali
+								Ayorinde Street, Victoria Island, Lagos. <br />
+								0700 933 933 933 (Mon-Fri from 9am-5pm) - contact@piggyvest.com
+							</p>
+							<p>
+								&copy; 2016 - 2020 PiggyTech Global Limited - RC 1405222
+							</p>
+						</div>
+					</div>
+				</div>
+				<div
+					class="footer-info w-full flex flex-wrap lg:flex-no-wrap md:flex-no-wrap lg:w-2/6 md:mt-8"
+				>
+					<ul class="w-full w-1/6 mt-8 lg:mt-6">
+						<h4 class="font-bold -mt-2 mb-8">Quick Links</h4>
+						<li class="pb-3">AutoSave<sup>TM</sup></li>
+						<li class="pb-3">PiggyLink</li>
+						<li class="pb-3">QuickSave<sup>TM</sup></li>
+						<li class="pb-3">SaveLock<sup>TM</sup></li>
+						<li class="pb-3">Withdrawals & Breaking</li>
+						<li>Salary Management</li>
+					</ul>
+					<ul class="w-full text-left w-1/6 mt-8 lg:mt-6 md:text-right">
+						<h4 class="font-bold -mt-2 mb-8">Company</h4>
+						<li class="pb-3">About</li>
+						<li class="pb-3">FAQ</li>
+						<li class="pb-3">Terms of Use</li>
+						<li class="pb-3">Privacy Policy</li>
+						<li class="flex justify-end">
+							<a href="#" class="mr-2">
+								<img src="./images/facebook.svg" alt="facebook" />
+							</a>
+							<a href="#" class="mr-2">
+								<img src="./images/twitter.svg" alt="twitter" />
+							</a>
+							<a href="#">
+								<img src="./images/instagram.svg" alt="instagram" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap'); */
+
+body {
+	font-smooth: always;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* adjust width */
+body::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+/* change track background */
+body::-webkit-scrollbar-track {
+	background: #000;
+}
+
+/* change thumb background */
+body::-webkit-scrollbar-thumb {
+	background: #144499;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

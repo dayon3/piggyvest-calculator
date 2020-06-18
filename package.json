@@ -1,0 +1,25 @@
+{
+	"name": "piggyvest-calculator",
+	"version": "1.0.0",
+	"description": "Interest Calculator",
+	"main": "index.js",
+	"scripts": {
+		"build": "postcss css/tailwind.css -o public/build/tailwind.css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dayon3/piggyvest-calculator.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/dayon3/piggyvest-calculator/issues"
+	},
+	"homepage": "https://github.com/dayon3/piggyvest-calculator#readme",
+	"dependencies": {
+		"autoprefixer": "^9.8.0",
+		"postcss-cli": "^7.1.1",
+		"tailwindcss": "^1.4.6"
+	}
+}
