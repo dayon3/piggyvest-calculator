@@ -113,7 +113,6 @@ let controller = ((interestCtrl, UICtrl) => {
 			input.principal,
 			input.duration
 		);
-		console.log(interest);
 
 		let totalBalance = interest + input.principal;
 		// Clear Inputs
@@ -125,7 +124,7 @@ let controller = ((interestCtrl, UICtrl) => {
 
 	return {
 		init: () => {
-			console.log('App has started.');
+			console.log('Application has started.');
 			UICtrl.displayDate();
 			setupEventListeners();
 		},
