@@ -20,7 +20,7 @@
 				</div>
 				<div class="block lg:hidden">
 					<button
-						class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+						class="flex items-center px-3 py-2 border rounded text-primary-blue border-primary-blue hover:text-white hover:border-white"
 					>
 						<svg
 							class="fill-current h-3 w-3"
@@ -104,7 +104,7 @@
 									Amount to lock
 								</label>
 								<input
-									class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+									class="input__amount appearance-none block w-full bg-input-color text-gray-700 border border-input-color rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-primary-blue"
 									id="grid-amount"
 									type="number"
 									placeholder="25000"
@@ -121,7 +121,7 @@
 								</label>
 								<div class="relative mb-3">
 									<select
-										class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+										class="input__duration block appearance-none w-full bg-input-color border border-input-color text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-primary-blue"
 										id="grid-duration"
 									>
 										<option>Monthly</option>
@@ -153,7 +153,7 @@
 									Payback Date
 								</label>
 								<input
-									class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+									class="input__payback-date appearance-none block w-full bg-input-color text-gray-700 border border-input-color rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-primary-blue"
 									id="grid-duration"
 									type="date"
 									value="2020-06-17"
@@ -165,7 +165,7 @@
 					</form>
 					<div class="w-full text-center mt-6">
 						<h3 class="text-primary-blue text-2xl">Estimated Balance</h3>
-						<span class="text-2xl">NG12,000</span>
+						<span class="text-2xl balance__label">NG12,000</span>
 					</div>
 				</div>
 			</div>
@@ -231,12 +231,9 @@
 			</div>
 		</div>
 
-		<footer
-			class="mx-auto w-full mt-20"
-			style="background: rgba(0, 136, 204, 0.04);"
-		>
+		<footer class="w-full mt-20" style="background: rgba(0, 136, 204, 0.04);">
 			<div
-				class="container w-full w-6/6 flex flex-wrap items-center justify-between p-6 md:"
+				class="container mx-auto w-full w-6/6 flex flex-wrap items-center justify-between p-6 md:"
 			>
 				<div class="flex mb-6 mx-auto lg:w-4/6 flex-1">
 					<div class="w-full flex-1">
@@ -263,7 +260,7 @@
 					class="footer-info w-full flex flex-wrap lg:flex-no-wrap md:flex-no-wrap lg:w-2/6 md:mt-8"
 				>
 					<ul class="w-full w-1/6 mt-8 lg:mt-6">
-						<h4 class="font-bold -mt-2 mb-8">Quick Links</h4>
+						<h4 class="font-semibold text-lg -mt-2 mb-8">Quick Links</h4>
 						<li class="pb-3">AutoSave<sup>TM</sup></li>
 						<li class="pb-3">PiggyLink</li>
 						<li class="pb-3">QuickSave<sup>TM</sup></li>
@@ -272,7 +269,7 @@
 						<li>Salary Management</li>
 					</ul>
 					<ul class="w-full text-left w-1/6 mt-8 lg:mt-6 md:text-right">
-						<h4 class="font-bold -mt-2 mb-8">Company</h4>
+						<h4 class="font-semibold text-lg -mt-2 mb-8">Company</h4>
 						<li class="pb-3">About</li>
 						<li class="pb-3">FAQ</li>
 						<li class="pb-3">Terms of Use</li>
